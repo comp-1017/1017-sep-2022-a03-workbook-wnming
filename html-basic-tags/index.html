@@ -86,6 +86,34 @@
                     default is same browser display page
                     _blank will open the destination in a new browser tab (page)
         -->
-        <a href="https://www.nait.ca" target="_blank">Go to NAIT</a>
+        <a href="https://www.nait.ca" target="_blank">Go to nait</a>
+
+        <h3>Image tag</h3>
+        <!--
+            Empty (void) tag 
+            The image tag does not have a cloing tag because there is no content to display
+            Parameters:
+                src="relative image location"
+                alt="printable tag of image is not found on file"
+                [title="tool tip text for the image"]
+
+                The relative path is from the top of your web site down/up to the file/page you decide to reference
+
+                Down: include all subfolder names and the final file name
+                    sf1/sf2/.../fn
+                Up: use the string .. to do up a level (subfolder)
+                    ../../sf1/fn
+        --> 
+        <img src="img/photoshop.png" alt="photoshop logo" title="the Adobe photoshop logo">
+        <!--
+            Can i use an image as the link to the www.adobe.com page
+        -->
+        <a href="https://www.adobe.com" target="_blank">
+            <img 
+            src="img/photoshop.png" 
+            alt="photoshop logo" 
+            title="Go to Adobe website" 
+            style="width:80px; height: 80px;">
+        </a>
     </body>
 </html>
