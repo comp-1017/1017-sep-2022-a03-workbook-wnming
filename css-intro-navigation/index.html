@@ -18,7 +18,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <aside>
                 <h2>
                     Create navigational links within a web site
                 </h2>
@@ -34,6 +34,44 @@
                 <p>
                     Navigational menu are placed in your &lt;header&gt; semantic area. They may also be placed in your &lt;footer&gt; area as a sitemap. The nav tag like other semantic tags should have a &lt;hx&gt; tag. However this header is optional. If you omit a header tag you will receive a document outliner error: Untitled Section. Until you are shown how to avoid this error message, it will be acceptable on your document outliner.
                 </p>
+            </aside>
+            <section>
+                <h2>CSS Coding Styles Summary</h2>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td>Browser Defaults (no css)</td>
+                            <td width="400px">you have no control over the styling</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Inline</td>
+                            <td>this is for a single specific element (tag) instance. Your css will be specified in a parameter withing the element. This css affects only the element tag that contains the specification.</td>
+                            <td>style="rule; [rule; ...]"</td>
+                            <td>style="color:red; width:50px;"</td>
+                        </tr>
+                        <tr>
+                            <td>Embedded</td>
+                            <td>the specification of css as embedded happens in your &lt;head&gt; area. This css affects all similar elements on the web page where the css is coded.</td>
+                            <td>&lt;style&gt; <br>selector{rule; [rule; ...]}
+                                <br>[selector{rule; [rule; ...]} ...]<br> &lt;/style&gt;
+                            </td>
+                            <td>&lt;style&gt; <br>p{color:red; width:50px;}
+                                <br>h1{font-style:itialic}<br> &lt;/style&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>link (stylesheet)</td>
+                            <td>
+                                This is the preferred method of doing css. You place your css in a separate physical file. This file can then be used on ANY web page in your web site. The link to this file will be done in your &lt;head&gt; area. The css in this file is similar to embedded EXCEPT there is no style tag
+                            </td>
+                            <td>selector{rule; [rule; ...]}
+                                <br>[selector{rule; [rule; ...]} ...]</td>
+                            <td>p{color:red; width:50px;}
+                                <br>h1{font-style:itialic}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <footer>
