@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Demo</title>
+    <meta name="author" content="Napat Phuwarintarawanich">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Flexbox 2 Column</h1>
+        </header>
+        <main>
+            <!--column one-->
+            <div class="asideSize red-paint"></div>
+            <!--column two-->
+            <div>
+                <!--the items within this div are NOT immidiately use main
+                the items within this div are immidiately under the div 
+                these items are NOT affected by the main flexbox therefore these items are by default "stacked"-->
+                <div class="contentSize blue-paint"></div>
+                <div class="contentSize green-paint"></div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

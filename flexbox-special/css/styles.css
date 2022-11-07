@@ -63,9 +63,10 @@ WARNING:
 ********************************************************************/
 
 main{
-    background-color: antiquewhite;
+    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid black;
 }
 
 
@@ -90,32 +91,54 @@ page-width = ncolumns * (box) + remainder
 435 = content
 **************************************************************************/
 
+.asideSize{
+    height: 600px;
+    width: 150px;
+    margin: 10px 0px 10px 10px;
+    border: 2px solid black;
+}
+
 .red-paint{
-    height: 300px;
-    width: 435px;
     background-color: red;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
+}
+
+/******************************************************************************************************************
+page = (column 1) + lm + lb + lp + content + rp + rb + rm + remainder
+960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + 10 + 2 + 0 + content + 0 + 2 + 10 + (4)
+960 = 192 + content
+768 = content
+
+the height of the right column items can use a similar calculation as the horizontal width layout
+
+the one item you MUST remember is that the vertical margin (VM) between item are collapsed
+
+the largest VM i use between any two single items
+
+aside is 600 px
+
+600 = 2(tb + tp + content + bp + bb) + VM
+600 = 2(2 + 0 + content + 0 + 2) + 10
+600 = 8 + 2content + 10
+600 = 2content + 18
+582 = 2content
+291 = content
+
+this ONLY works because the content area height is the same as the vertical margin
+
+NORMALLY vertical height is determined by the content of 
+******************************************************************************************************************/
+
+.contentSize{
+    margin: 10px 0px 10px 10px;
+    border: 2px solid black;
+    height: 291px;
+    width: 768px;
 }
 
 .blue-paint{
-    height: 300px;
-    width: 435px;
     background-color: blue;
-    margin: 30px 0px 0px 30px;
 }
 
-/********************************************************
-page = lm + lb + lp + content + rp + rb + rm + remainder
-960 = 30 + 0 + 0 + content + 0 + 0 + 0 + 30
-960 = 60 + content
-900 = content
-********************************************************/
-
-.black-paint{
-    height: 50px;
-    width: 900px;
-    background-color: black;
-    margin: 30px 30px 30px 30px;
+.green-paint{
+    background-color: green;
 }
