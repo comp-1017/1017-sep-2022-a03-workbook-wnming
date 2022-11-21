@@ -1,0 +1,72 @@
+body {
+	background-color: white;
+	background-image: url(../img/pattern-bg.gif);
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: 'Alegreya', serif;
+}
+
+header{
+	height: 70px;
+	background-color: #fff;
+	border-bottom: 1px solid #959372;
+}
+
+header h1{
+	display: none;
+}
+
+/*when you use a class, you can assign the class to any number of element tags in your html using*/
+
+header img{
+	margin: 14px;
+}
+
+/* .nav-banner{
+	padding: 50px;
+	background-image: url(../img/pattern-bg.gif);
+} */
+
+/*style the banner
+move the banner by using the margin-top
+added the bg img which has NO effect on physical content size
+adjusted height (content height) to img size
+added padding (caused problem with img, beginning to repeat img)
+adjusted height (content height) to account for ??
+*/
+.banner{
+	margin-top: 60px;
+	background-image: url(../img/flower-banner.jpg);
+	height: 420px; /*480px - 60px padding*/
+	padding: 50px 0 0 680px;
+}
+
+.banner h2{
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	color: #f9ea4f;
+	font-style: italic;
+}
+
+.banner a{
+	color: #faf9f8;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/*
+:visited if the link has been used
+:active if the link is clicked
+*/
+.banner a:hover{
+	color: #f9ea4f;
+}
+
+.banner li{
+	line-height: 40px;
+}
