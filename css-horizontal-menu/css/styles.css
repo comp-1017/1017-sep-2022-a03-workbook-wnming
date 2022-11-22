@@ -1,0 +1,135 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size:100%;
+    line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+	color: #f1f7f6;
+}
+
+.visuallyhidden {
+	display: none;
+}
+
+/*
+font-family: 'Alegreya', serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/**********************************************
+	header
+**********************************************/
+header{
+	background-color: #028568;
+	display: flex;
+}
+
+header .logo{
+	margin: 10px;
+}
+
+/**********************************************
+	several steps in converting the
+	vertical menu into a horizontal menu
+	at the same time style menu
+**********************************************/
+nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav li{
+	font-size: 18px;
+	margin-right: 30px;
+	line-height: 75px;
+}
+
+nav ul{
+	display: flex; /*place logo on the same line*/
+}
+
+header nav{
+	margin-left: 210px;
+}
+
+header nav a:hover{
+	border-bottom: 2px solid #abddd5;
+}
+
+/**********************************************
+	main
+**********************************************/
+/*general banner class setup*/
+.banner{
+	display: flex;
+	background-image: url(../img/island-bg.jpg);
+	font-size: 18px;
+}
+
+/*left width is 578px
+to center the content, pad within the column
+578 = 2(82) + conetnt
+578 = 164 + content
+414 = content
+*/
+.banner .left-column{
+	width: 414px;
+	padding: 85px 82px 0 82px;
+	text-align: center;
+}
+
+.banner .left-column h2{
+	font-family: 'Alegreya', serif;
+	margin-bottom: 32px;
+	font-size: 26px;
+}
+
+.banner .bar{
+	width: 414px;
+	height: 8px;
+	background-color: #abddd5;
+	margin-bottom: 36px;
+}
+
+/*right width is 348px
+384 = 166 + content
+218 = content
+*/
+
+.banner .right-column{
+	width: 218px;
+	text-align: center;
+	padding: 85px 83px 0 83px;
+	background-color: rgb(171, 221, 213, 0.8); /*rgb with transparent where 0.0 < a < 1*/
+}
+
+.banner .right-column h2{
+	font-family: 'Alegreya', serif;
+	margin-bottom: 32px;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+/*how to style an anchor tag link to look like a button*/
+.banner a{
+	background-color: #fff;
+	text-decoration: none;
+	color: #028586;
+	text-align: center;
+	border-radius: 8px;
+	padding: 9px 38px;
+	display: inline-block; /*changes how the element is handled for display, the default of the anchor is inline the margin has no affect agaist an inline element have the browser handle the tag as a "block"*/
+	margin-bottom: 65px;
+}
+
+/*draw attention to the link when you hover over it*/
+.banner a:hover{
+	padding: 9px 38px 9px 38px;
+	font-weight: bold;
+	background-color: azure;
+	/* font-size: larger; */
+}
